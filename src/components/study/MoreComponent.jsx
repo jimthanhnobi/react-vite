@@ -6,7 +6,7 @@ const FirstComponent = () => {
 
 const SecondComponent = () => {
     return (
-        <div>K17 - FPT University</div>
+        <div>Overflow</div>
     )
 }
 
