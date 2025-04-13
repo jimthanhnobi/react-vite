@@ -2,17 +2,12 @@ import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
 import './App.css'
+import ArrowComponent from './components/study/MyComponent'
+import { FirstComponent, SecondComponent } from './components/study/MoreComponent'
+
 
 const App = () => {
   const [count, setCount] = useState(0)
-
-  const ArrowComponent = () => {
-    return (
-      <div>chu van thanh & flow </div>
-    )
-  }
-
-  //ArrowFunction()
 
   return (
     <>
@@ -26,6 +21,8 @@ const App = () => {
       </div>
       <h1>Thanh SASS</h1>
       <ArrowComponent />
+      <FirstComponent />
+      <SecondComponent />
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
