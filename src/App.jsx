@@ -6,11 +6,13 @@ import './App.css'
 const App = () => {
   const [count, setCount] = useState(0)
 
-  const ArrowFunction = () => {
-    console.log("Chu Van Thanh")
+  const ArrowComponent = () => {
+    return (
+      <div>chu van thanh & flow </div>
+    )
   }
 
-  ArrowFunction()
+  //ArrowFunction()
 
   return (
     <>
@@ -22,7 +24,8 @@ const App = () => {
           <img src={reactLogo} className="logo react" alt="React logo" />
         </a>
       </div>
-      <h1>Thanh faf</h1>
+      <h1>Thanh SASS</h1>
+      <ArrowComponent />
       <div className="card">
         <button onClick={() => setCount((count) => count + 1)}>
           count is {count}
