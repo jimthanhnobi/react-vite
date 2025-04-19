@@ -31,3 +31,16 @@
     flex-direction: column;
     gap: 15px;
 }
+
+.todo-item {
+    display: flex;
+    justify-content: space-between;
+}
+
+.button {
+    margin: 10px;
+}
+
+.logo {
+    width: 250px;
+}
