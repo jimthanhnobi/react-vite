@@ -6,7 +6,12 @@ const FirstComponent = () => {
 
 const SecondComponent = () => {
     return (
-        <div>Overflow</div>
+        <>
+            <div className="child-name"
+                style={{ textAlign: "left" }}>
+                Overflow
+            </div>
+        </>
     )
 }
 

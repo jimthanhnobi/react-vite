@@ -1,39 +1,31 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
+import Todo from './components/todo/Todo'
+import TodoData from './components/todo/TodoData'
 import viteLogo from '/vite.svg'
-import './App.css'
-import ArrowComponent from './components/study/MyComponent'
-import { FirstComponent, SecondComponent } from './components/study/MoreComponent'
-
+import './components/todo/todo.css'
 
 const App = () => {
-  const [count, setCount] = useState(0)
+  const name = "Thanh";
+  const data = {
+    country: "Vietnam",
+    address: "Ha Noi"
+  }
 
+  const addNewTodo = (name) => {
+    alert(`hello ${name}`)
+  }
   return (
     <>
-      <div>
-        <a href="https://vite.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
+      <div className="todo-container">
+        <div className='todo-title'>Todo List</div>
+        <Todo
+          addNewTodo={addNewTodo}
+        />
+        <TodoData
+          name={name}
+          data={data}
+        />
+        <img src={viteLogo} className="logo" alt="Vite logo" />
       </div>
-      <h1>Thanh SASS</h1>
-      <ArrowComponent />
-      <FirstComponent />
-      <SecondComponent />
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
     </>
   )
 }

@@ -1,0 +1,33 @@
+#root {
+    max-width: 1280px;
+    margin: 0 auto;
+    padding: 2rem;
+    text-align: center;
+}
+
+.todo-title {
+    color: aquamarine;
+    text-align: center;
+    font-weight: bold;
+}
+
+.todo-container {
+    width: 600px;
+    margin: 50px auto;
+}
+
+.todo-new {
+    width: 100%;
+    display: flex;
+    gap: 15px;
+    justify-content: center;
+}
+
+.todo-data {
+    margin-top: 20px;
+    padding: 18px;
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
