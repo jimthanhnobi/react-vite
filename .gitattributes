@@ -1,0 +1,12 @@
+# Tự động chuẩn hóa line endings thành LF
+* text=auto
+
+# Cố định LF cho một số loại file phổ biến trong dự án React
+*.js text eol=lf
+*.jsx text eol=lf
+*.ts text eol=lf
+*.tsx text eol=lf
+*.json text eol=lf
+*.css text eol=lf
+*.html text eol=lf
+*.md text eol=lf
